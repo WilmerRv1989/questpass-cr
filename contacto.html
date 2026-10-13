@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto | QuestPass CR</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <a class="visually-hidden-focusable salto" href="#contenido">Saltar al contenido principal</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">QuestPass CR</a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal" aria-expanded="false"
+                        aria-label="Menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experiencias.html">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservar.html">Reservar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.html">Administración</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido" class="container" tabindex="-1">
+        <h1 class="display-5">Contacto</h1>
+        <p class="lead">Escríbanos sus consultas sobre experiencias, reservas o patrocinios. Todos los campos son obligatorios.</p>
+
+        <form class="formulario marco mx-auto p-md-4" method="post">
+            <div class="row mb-3">
+                <label for="nombre" class="col-md-3 col-form-label text-md-end">Nombre</label>
+                <div class="col-md-7">
+                    <input type="text" id="nombre" name="nombre" class="form-control"
+                           required minlength="3" maxlength="60" autocomplete="name">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="correo" class="col-md-3 col-form-label text-md-end">Correo electrónico</label>
+                <div class="col-md-7">
+                    <input type="email" id="correo" name="correo" class="form-control"
+                           required autocomplete="email">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="asunto" class="col-md-3 col-form-label text-md-end">Asunto</label>
+                <div class="col-md-7">
+                    <input type="text" id="asunto" name="asunto" class="form-control"
+                           required minlength="3" maxlength="100">
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <label for="mensaje" class="col-md-3 col-form-label text-md-end">Mensaje</label>
+                <div class="col-md-7">
+                    <textarea id="mensaje" name="mensaje" class="form-control" rows="6"
+                              required minlength="10" maxlength="1000" aria-describedby="ayuda-mensaje"></textarea>
+                    <div id="ayuda-mensaje" class="form-text">Entre 10 y 1000 caracteres.</div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Enviar mensaje</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="pie">
+        <div class="container">
+            <p>&copy; 2026 QuestPass CR</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

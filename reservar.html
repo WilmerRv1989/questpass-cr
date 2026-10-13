@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reservar | QuestPass CR</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <a class="visually-hidden-focusable salto" href="#contenido">Saltar al contenido principal</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">QuestPass CR</a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal" aria-expanded="false"
+                        aria-label="Menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experiencias.html">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="reservar.html">Reservar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.html">Administración</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido" class="container" tabindex="-1">
+        <h1 class="display-5">Reservar entradas</h1>
+        <p class="lead">Complete el formulario para reservar de 1 a 4 entradas. Todos los campos son obligatorios.</p>
+
+        <form class="formulario mx-auto p-md-4" method="post">
+            <fieldset class="mb-4">
+                <legend class="h4">Datos de contacto</legend>
+
+                <div class="row mb-3">
+                    <label for="nombre" class="col-md-3 col-form-label text-md-end">Nombre completo</label>
+                    <div class="col-md-7">
+                        <input type="text" id="nombre" name="nombre" class="form-control"
+                               required minlength="3" maxlength="60" autocomplete="name">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="correo" class="col-md-3 col-form-label text-md-end">Correo electrónico</label>
+                    <div class="col-md-7">
+                        <input type="email" id="correo" name="correo" class="form-control"
+                               required autocomplete="email">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="telefono" class="col-md-3 col-form-label text-md-end">Teléfono</label>
+                    <div class="col-md-4">
+                        <input type="tel" id="telefono" name="telefono" class="form-control"
+                               required maxlength="9" pattern="[0-9]{4}-?[0-9]{4}"
+                               autocomplete="tel" aria-describedby="ayuda-telefono">
+                        <div id="ayuda-telefono" class="form-text">Formato: 8888-8888 u 88888888.</div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="mb-4">
+                <legend class="h4">Datos de la reserva</legend>
+
+                <div class="row mb-3">
+                    <label for="experiencia" class="col-md-3 col-form-label text-md-end">Experiencia</label>
+                    <div class="col-md-7">
+                        <select id="experiencia" name="experiencia" class="form-select" required>
+                            <option value="">Seleccione una experiencia</option>
+                            <option value="QST-001">El Archivo 47</option>
+                            <option value="QST-002">Retro Arena 16-Bit</option>
+                            <option value="QST-003">Cosplay SOS: de cero a personaje</option>
+                            <option value="QST-004">Multiverso Geek: Trivia en vivo</option>
+                            <option value="QST-005">Primera misión: D&amp;D para principiantes</option>
+                            <option value="QST-006">Miniaturas: pintura rápida</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="cantidad" class="col-md-3 col-form-label text-md-end">Cantidad de entradas</label>
+                    <div class="col-md-3">
+                        <input type="number" id="cantidad" name="cantidad" class="form-control"
+                               required min="1" max="4" step="1" aria-describedby="ayuda-cantidad">
+                        <div id="ayuda-cantidad" class="form-text">De 1 a 4 entradas.</div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="row mb-4">
+                <div class="col-md-9 offset-md-3">
+                    <div class="form-check">
+                        <input type="checkbox" id="condiciones" name="condiciones" class="form-check-input" required>
+                        <label for="condiciones" class="form-check-label">Acepto las condiciones de la reserva</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Enviar reserva</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="pie">
+        <div class="container">
+            <p>&copy; 2026 QuestPass CR</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
