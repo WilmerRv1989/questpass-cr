@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="titulo desc" font-family="Arial, sans-serif">
+  <title id="titulo">Wireframe de index.html</title>
+  <desc id="desc">Menú superior; portada con el título QuestPass CR, frase de presentación y botones Ver experiencias y Reservar entradas; sección Qué es QuestPass CR; sección Cómo reservar con tres pasos; pie de página.</desc>
+  <defs>
+    <marker id="flecha" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#000"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="620" fill="#fff"/>
+  <rect x="0" y="0" width="1000" height="60" fill="#343a40" stroke="#000" stroke-width="2"/>
+  <text x="20" y="37.0" font-size="18" text-anchor="start" fill="#fff" font-weight="bold">QuestPass CR</text>
+  <text x="180" y="37.0" font-size="14" text-anchor="start" fill="#fff" font-weight="bold">Inicio</text>
+  <text x="250" y="37.0" font-size="14" text-anchor="start" fill="#fff">Experiencias</text>
+  <text x="360" y="37.0" font-size="14" text-anchor="start" fill="#fff">Reservar</text>
+  <text x="440" y="37.0" font-size="14" text-anchor="start" fill="#fff">Contacto</text>
+  <text x="780" y="37.0" font-size="14" text-anchor="start" fill="#fff">Iniciar sesión</text>
+  <text x="880" y="37.0" font-size="14" text-anchor="start" fill="#fff">Administración</text>
+  <rect x="150" y="90" width="700" height="260" fill="#f1f3f5" stroke="#000" stroke-width="2"/>
+  <rect x="250" y="110" width="500" height="50" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="500.0" y="142.7" font-size="22" text-anchor="middle" fill="#000" font-weight="bold">QuestPass CR (h1)</text>
+  <rect x="200" y="180" width="600" height="40" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="500.0" y="204.9" font-size="14" text-anchor="middle" fill="#000">Frase de presentación</text>
+  <rect x="320" y="245" width="170" height="40" fill="#cfe2ff" stroke="#000" stroke-width="2"/>
+  <text x="405.0" y="269.9" font-size="14" text-anchor="middle" fill="#000">Ver experiencias</text>
+  <rect x="510" y="245" width="170" height="40" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="595.0" y="269.9" font-size="14" text-anchor="middle" fill="#000">Reservar entradas</text>
+  <rect x="150" y="370" width="700" height="80" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="500.0" y="406.5" font-size="14" text-anchor="middle" fill="#000">¿Qué es QuestPass CR? (h2)</text>
+  <text x="500.0" y="423.3" font-size="14" text-anchor="middle" fill="#000">Párrafo de descripción</text>
+  <rect x="150" y="465" width="700" height="90" fill="#fff" stroke="#000" stroke-width="2"/>
+  <text x="500.0" y="506.5" font-size="14" text-anchor="middle" fill="#000">¿Cómo reservar? (h2)</text>
+  <text x="500.0" y="523.3" font-size="14" text-anchor="middle" fill="#000">1. Revisar experiencias · 2. Elegir experiencia y cantidad · 3. Completar el formulario</text>
+  <rect x="0" y="570" width="1000" height="50" fill="#f8f9fa" stroke="#000" stroke-width="2"/>
+  <text x="500.0" y="599.9" font-size="14" text-anchor="middle" fill="#000">Pie de página: © 2026 QuestPass CR</text>
+</svg>
