@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio | QuestPass CR</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <a class="visually-hidden-focusable salto" href="#contenido">Saltar al contenido principal</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">QuestPass CR</a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal" aria-expanded="false"
+                        aria-label="Menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experiencias.html">Experiencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservar.html">Reservar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Iniciar sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.html">Administración</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido" class="container" tabindex="-1">
+        <section class="portada" aria-labelledby="titulo-principal">
+            <h1 id="titulo-principal" class="display-5">QuestPass CR</h1>
+            <p class="lead">Experiencias geek en Costa Rica: escape rooms, torneos retro, talleres, trivia y rol para principiantes.</p>
+            <div class="acciones">
+                <a class="btn btn-primary btn-lg" href="experiencias.html">Ver experiencias</a>
+                <a class="btn btn-outline-dark btn-lg" href="reservar.html">Reservar entradas</a>
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-que-es">
+            <h2 id="titulo-que-es">¿Qué es QuestPass CR?</h2>
+            <p>QuestPass CR reúne en un solo lugar experiencias presenciales y virtuales para la comunidad geek. Cada experiencia tiene cupos limitados y se reserva en línea.</p>
+        </section>
+
+        <section aria-labelledby="titulo-como-reservar">
+            <h2 id="titulo-como-reservar">¿Cómo reservar?</h2>
+            <ol>
+                <li>Revise las <a href="experiencias.html">experiencias disponibles</a>.</li>
+                <li>Elija una experiencia y la cantidad de entradas, de 1 a 4.</li>
+                <li>Complete el <a href="reservar.html">formulario de reserva</a>.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="container">
+            <p>&copy; 2026 QuestPass CR</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

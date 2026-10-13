@@ -1,0 +1,134 @@
+:root {
+    --color-foco: #ffbf47;
+    --color-borde-foco: #0b0c0c;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+main:focus {
+    outline: none;
+}
+
+main h1,
+main h1 + .lead {
+    text-align: center;
+}
+
+main h1 {
+    margin-bottom: 1.5rem;
+}
+
+main h1 + .lead {
+    margin-bottom: 2rem;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-borde-foco);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 6px var(--color-foco);
+}
+
+.navbar a:focus-visible,
+.navbar button:focus-visible {
+    outline-color: var(--color-foco);
+    box-shadow: none;
+}
+
+.salto {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 1100;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.portada {
+    margin-bottom: 2rem;
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #f1f3f5;
+}
+
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.portada .acciones {
+    justify-content: center;
+}
+
+.detalle {
+    max-width: 40rem;
+}
+
+.formulario {
+    max-width: 50rem;
+}
+
+.formulario-corto {
+    max-width: 36rem;
+}
+
+.formulario fieldset,
+.marco {
+    padding: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+}
+
+.pie {
+    padding: 1.5rem 0;
+    border-top: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.pie p {
+    margin: 0;
+}
+
+@media (max-width: 575.98px) {
+    .portada {
+        padding: 1.25rem 1rem;
+    }
+
+    .portada .acciones {
+        flex-direction: column;
+    }
+
+    .portada .acciones .btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .portada h1 {
+        font-size: 3.5rem;
+    }
+
+    .portada .lead {
+        max-width: 45rem;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 1.5rem;
+    }
+}
